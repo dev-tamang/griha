@@ -28,13 +28,11 @@ dependencyManagement {
 dependencies {
 
     implementation("org.yaml:snakeyaml:2.0")
-    implementation("org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter"){
-        exclude group: "org.yaml", module: "snakeyaml"
-    }
-    implementation("commons-fileupload:commons-fileupload:1.5")
-    implementation("org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-rest"){
-        exclude group: "commons-fileupload", module: "commons-fileupload"
-    }
+    implementation("org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter")
+
+
+    implementation("commons-fileupload:commons-fileupload:1.4")
+    implementation("org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-rest")
     implementation("org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-webapp")
 
 
@@ -47,6 +45,15 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
     testImplementation("org.camunda.bpm.assert:camunda-bpm-assert:15.0.0")
     testImplementation("org.camunda.bpm.extension:camunda-bpm-junit5:1.1.0")
+
+
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.30'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+
 }
 
 tasks.test {

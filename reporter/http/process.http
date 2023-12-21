@@ -1,0 +1,8 @@
+
+
+### Start process
+
+curl --location 'localhost:8080/engine-rest/process-definition/key/Process_HelloWorld/start' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Basic YWRtaW46YWRtaW4=' \
+--data '{}'
