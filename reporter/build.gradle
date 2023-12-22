@@ -31,14 +31,16 @@ dependencies {
     implementation("org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter")
 
 
-    implementation("commons-fileupload:commons-fileupload:1.4")
+    implementation("commons-fileupload:commons-fileupload:1.5")
     implementation("org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-rest")
     implementation("org.camunda.bpm.springboot:camunda-bpm-spring-boot-starter-webapp")
+
+    implementation("org.camunda.bpm:camunda-engine-plugin-spin")
+    implementation("org.camunda.spin:camunda-spin-dataformat-json-jackson")
 
 
     implementation("org.springframework.boot:spring-boot-starter-jdbc")
     implementation("com.h2database:h2:${h2databaseVersion}")
-
 
 
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
@@ -49,7 +51,6 @@ dependencies {
 
     compileOnly 'org.projectlombok:lombok:1.18.30'
     annotationProcessor 'org.projectlombok:lombok:1.18.30'
-
     testCompileOnly 'org.projectlombok:lombok:1.18.30'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.30'
 
