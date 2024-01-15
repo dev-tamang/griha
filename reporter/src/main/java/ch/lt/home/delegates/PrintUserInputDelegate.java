@@ -15,7 +15,7 @@ import static ch.lt.home.helper.ProcessVariables.TESTER;
 
 @Slf4j
 @Component("printUserInput")
-public class PrintUserInput implements JavaDelegate {
+public class PrintUserInputDelegate implements JavaDelegate {
     @Override
     public void execute(DelegateExecution execution) {
 

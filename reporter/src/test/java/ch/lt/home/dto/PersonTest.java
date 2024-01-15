@@ -19,4 +19,6 @@ public class PersonTest {
         var jsonperson = mapper.readValue(jsonString, Person.class);
         log.info("the person is " + jsonperson);
     }
+
+
 }

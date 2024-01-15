@@ -29,6 +29,7 @@ public class CamundaVariableHelper {
 
     public List<Class<?>> primitiveTypes() {
         return Arrays.asList(
+                ValueType.BYTES.getJavaType(),
                 ValueType.INTEGER.getJavaType(),
                 ValueType.BOOLEAN.getJavaType(),
                 ValueType.STRING.getJavaType());
@@ -45,8 +46,7 @@ public class CamundaVariableHelper {
                 variableScope.setVariable(variable.getName(), objectValue);
             }
         } catch (Exception e) {
-            log.warn("the exception is " + e);
-            throw new ClassCastException("while updating Variable: " + variable.getName());
+            log.warn("Exception occurred while update variable"+ variable.getName()+ " Exception: " + e.getMessage());
         }
     }
 }
