@@ -40,3 +40,5 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/camunda-h2-database.mv.db
+/camunda-h2-database.trace.db
