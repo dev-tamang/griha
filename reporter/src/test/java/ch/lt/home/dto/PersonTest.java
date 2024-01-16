@@ -1,5 +1,6 @@
 package ch.lt.home.dto;
 
+import ch.lt.home.helloworld.dto.Person;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;

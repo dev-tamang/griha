@@ -10,7 +10,7 @@
       "value": "{\"firstName\":\"Test\",\"lastName\":\"Person\",\"dateOfBirth\":\"2000-01-01\"}",
       "valueInfo": {
         "serializationDataFormat": "application/json",
-        "objectTypeName": "ch.lt.home.dto.Person"
+        "objectTypeName": "ch.lt.home.helloworld.dto.Person"
       }
     }
   }

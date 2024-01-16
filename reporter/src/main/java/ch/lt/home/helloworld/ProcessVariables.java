@@ -1,6 +1,6 @@
-package ch.lt.home.helper;
+package ch.lt.home.helloworld;
 
-import ch.lt.home.dto.Person;
+import ch.lt.home.helloworld.dto.Person;
 import ch.lt.home.helper.camunda.CamundaVariableDefinition;
 
 public class ProcessVariables {
