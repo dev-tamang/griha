@@ -1,16 +1,16 @@
-package ch.lt.home.delegates;
+package ch.lt.home.helloworld.delegates;
 
 
-import ch.lt.home.dto.Person;
-import ch.lt.home.helper.ProcessVariables;
+import ch.lt.home.helloworld.dto.Person;
+import ch.lt.home.helloworld.ProcessVariables;
 import ch.lt.home.helper.camunda.CamundaVariableHelper;
 import lombok.extern.slf4j.Slf4j;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
 import org.springframework.stereotype.Component;
 
-import static ch.lt.home.helper.ProcessVariables.PERSON2;
-import static ch.lt.home.helper.ProcessVariables.TESTER;
+import static ch.lt.home.helloworld.ProcessVariables.PERSON2;
+import static ch.lt.home.helloworld.ProcessVariables.TESTER;
 
 
 @Slf4j

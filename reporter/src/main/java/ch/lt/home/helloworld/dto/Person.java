@@ -1,4 +1,4 @@
-package ch.lt.home.dto;
+package ch.lt.home.helloworld.dto;
 
 
 import com.fasterxml.jackson.annotation.JsonFormat;
